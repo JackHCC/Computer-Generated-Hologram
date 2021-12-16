@@ -16,6 +16,14 @@ CGH stands for computer-generated holograms (CGH). Holograms are unique in their
 
 
 
+## Usage
+
+Working on a hologram simulation API.
+
+Please wait!
+
+
+
 ## Experiment
 
 ### Before Experiment
@@ -54,8 +62,6 @@ Two ways to do experiments are provided here, Matlab or Python, and you can choo
 + Finally, after running the program, you can get the reproduced graph and compare it with the original image.
 
 ![](./Matlab/result/fh_test_recover.bmp)
-
-
 
 ### Kinoform
 
@@ -109,7 +115,9 @@ Two ways to do experiments are provided here, Matlab or Python, and you can choo
 
 
 
+## Contact
 
+If you have any questions or good ideas, please contact: jackcc0701@163.com
 
 
 

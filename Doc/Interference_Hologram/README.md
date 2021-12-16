@@ -43,6 +43,8 @@ $$
 $$
 N_{p}=\left.\phi(x, y)\right|_{\max }=\frac{\pi \cdot \frac{D^{2}}{4}}{\lambda \cdot f \cdot 2 \pi}=\frac{D^{2}}{8 \lambda f}=\frac{N}{16}
 $$
+
+
 **锥形波面**
 
 锥形面波的位相变化为：
@@ -55,6 +57,8 @@ $$
 $$
 N_{\mathrm{p}}=\frac{D}{2 \cdot r_{0}}=\frac{N}{8}
 $$
+
+
 **螺旋形波面**
 
 相对变化：

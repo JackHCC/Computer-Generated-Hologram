@@ -157,7 +157,7 @@ This method is to find a special hologram recording medium, which can not only u
 
 ![](../../Images/doc_kinoform_p2.png)
 
-**Pure phase hologram **
+**Pure phase hologram**
 
 Another phase - and - kinoform extension technique is phase - modulation of the phase - and - kinoform record. The method is to record the phase of the object wave modulated by the Fourier transform amplitude of the object wave on the kinoform instead of directly recording the phase after the Fourier transform. Usually, an additional phase term is added to the original phase term and a phase change is used to modulate the amplitude of the matter wave during reproduction. Such a kinoform is also called a pure phase hologram. Although the amplitude of the hologram is constant, the hologram of pure phase contains all the information of matter wave. Of course, due to the introduction of amplitude changes in the reconstructed wave, the light wave will inevitably deviate during the reconstruction, which will reduce the diffraction efficiency of the reconstructed image.
 
