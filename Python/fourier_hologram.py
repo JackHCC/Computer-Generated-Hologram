@@ -91,6 +91,14 @@ Z_large_show = Image.fromarray(Z_large).convert("L")
 Z_large_show.save("./result/fh_test_large_CGH.bmp", "bmp")
 
 Z_recover = np.abs(P1) * 255
+Gmax = np.max(Z_recover)
+Gmin = np.min(Z_recover)
+
+# try to change the parameter to get the best image
+p = 2
+Gm = Gmax / p
+np.clip(Z_recover, Gmin, Gm, out=Z_recover)
+
 Z_recover = Z_recover * 255 / np.max(Z_recover)
 # print(np.max(Z_recover))
 
