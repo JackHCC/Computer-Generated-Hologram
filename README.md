@@ -7,6 +7,8 @@
 
 CGH stands for computer-generated holograms (CGH). Holograms are unique in their ability to record both the intensity and phase of information.
 
+More Resource to learn holography 👉 [Awesome Holography](./Doc/Awesome.md)👈
+
 ### Iterative Method
 
 The iterative algorithm usually starts from an approximation of the target hologram, and continuously optimizes the approximate hologram through a series of repeated operations until the reconstructed image obtained by the approximation meets certain error requirements.
