@@ -15,14 +15,18 @@ The iterative algorithm usually starts from an approximation of the target holog
 
 According to the amplitude distribution of the hologram plane and the reconstructed image plane, the phase information of the light field in the hologram plane can be obtained by iterating the forward and reverse light wave transmission and the restrictions imposed on the two planes.
 
-|           CGH Class            |                           Document                           | Link |
-| :----------------------------: | :----------------------------------------------------------: | :--: |
-| GS(Gerchberg-Saxton) Algorithm | 👉[Paper](https://scholar.google.com/scholar?q=A%20practical%20algorithm%20for%20the%20determination%20of%20phase%20from%20image%20and%20diffraction%20plane%20pictures) | [Code](./Python/iterative_methods/GS.py) |
+|           Algorithm            |                            Paper                             |                     Link                     |
+| :----------------------------: | :----------------------------------------------------------: | :------------------------------------------: |
+| GS(Gerchberg-Saxton) Algorithm | 👉[Paper](https://scholar.google.com/scholar?q=A%20practical%20algorithm%20for%20the%20determination%20of%20phase%20from%20image%20and%20diffraction%20plane%20pictures) |   [Code](./Python/iterative_methods/GS.py)   |
 |        Fienup Algorithm        | 👉[Paper](https://labsites.rochester.edu/fienup/wp-content/uploads/2019/07/OEngr1980_ITAimRecCGH.pdf) | [Code](./Python/iterative_methods/Fienup.py) |
 
 #### Error Diffusion Method
 
-Todo
+The error diffusion algorithm iterates between the pixels of the hologram plane in turn, rather than between the hologram plane and the object image plane，Without any information of the object image, only the complex amplitude hologram itself can be directly operated on it and a pure phase hologram can be calculated.
+
+|         Algorithm         | Paper  |                         Link                          |
+| :-----------------------: | :----: |:-----------------------------------------------------:|
+| Error Diffusion Algorithm | 👉Paper | [Code](./Python/iterative_methods/Error_Diffusion.py) |
 
 ### Non Iterative Method
 
