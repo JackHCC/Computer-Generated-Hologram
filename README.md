@@ -7,6 +7,25 @@
 
 CGH stands for computer-generated holograms (CGH). Holograms are unique in their ability to record both the intensity and phase of information.
 
+### Iterative Method
+
+The iterative algorithm usually starts from an approximation of the target hologram, and continuously optimizes the approximate hologram through a series of repeated operations until the reconstructed image obtained by the approximation meets certain error requirements.
+
+#### GS-Base Algorithm
+
+According to the amplitude distribution of the hologram plane and the reconstructed image plane, the phase information of the light field in the hologram plane can be obtained by iterating the forward and reverse light wave transmission and the restrictions imposed on the two planes.
+
+|           CGH Class            |                           Document                           | Link |
+| :----------------------------: | :----------------------------------------------------------: | :--: |
+| GS(Gerchberg-Saxton) Algorithm | 👉[Paper](https://scholar.google.com/scholar?q=A%20practical%20algorithm%20for%20the%20determination%20of%20phase%20from%20image%20and%20diffraction%20plane%20pictures) | [Code](./Python/iterative_methods/GS.py) |
+|        Fienup Algorithm        | 👉[Paper](https://labsites.rochester.edu/fienup/wp-content/uploads/2019/07/OEngr1980_ITAimRecCGH.pdf) | [Code](./Python/iterative_methods/Fienup.py) |
+
+#### Error Diffusion Method
+
+Todo
+
+### Non Iterative Method
+
 |                          CGH Class                           |                  Document                   | Link |
 | :----------------------------------------------------------: | :-----------------------------------------: | :--: |
 | Circuitous Phase Type Hologram/Fourier Hologram【迂回位相型全息图】 |   👉[Doc](Doc/Fourier_Hologram/README.md)    | Code |
@@ -19,8 +38,6 @@ CGH stands for computer-generated holograms (CGH). Holograms are unique in their
 ## Usage
 
 Working on a hologram simulation API.
-
-Please wait!
 
 
 
