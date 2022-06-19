@@ -32,12 +32,12 @@ The error diffusion algorithm iterates between the pixels of the hologram plane 
 
 ### Non Iterative Method
 
-|                          CGH Class                           |                  Document                   | Link |
-| :----------------------------------------------------------: | :-----------------------------------------: | :--: |
-| Circuitous Phase Type Hologram/Fourier Hologram【迂回位相型全息图】 |   👉[Doc](Doc/Fourier_Hologram/README.md)    | Code |
-|                      Kinoform【相息图】                      |       👉[Doc](Doc/Kinoform/README.md)        | Code |
-|               Fresnel Hologram【菲涅尔全息图】               |                    👉Doc                     | Code |
-|       Off Axis Interference Hologram【离轴干涉全息图】       | 👉[Doc](Doc/Interference_Hologram/README.md) | Code |
+|                          CGH Class                           |                  Document                   |                 Link                 |
+| :----------------------------------------------------------: | :-----------------------------------------: |:------------------------------------:|
+| Circuitous Phase Type Hologram/Fourier Hologram【迂回位相型全息图】 |   👉[Doc](Doc/Fourier_Hologram/README.md)    | [Code](./Python/fourier_hologram.py) |
+|                      Kinoform【相息图】                      |       👉[Doc](Doc/Kinoform/README.md)        |          [Code](./Python/kinoforms.py)           |
+|               Fresnel Hologram【菲涅尔全息图】               |                    👉Doc                     |          [Code](./Python/fresnel_hologram.py)           |
+|       Off Axis Interference Hologram【离轴干涉全息图】       | 👉[Doc](Doc/Interference_Hologram/README.md) |          [Code](./Python/offaxis_interference_hologram.py)           |
 
 
 

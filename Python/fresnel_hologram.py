@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 '''
 @Project :Computer-Generated-Hologram 
-@File    :fresnell_hologram.py
+@File    :fresnel_hologram.py
 @Author  :JackHCC
 @Date    :2022/6/15 22:17 
 @Desc    :
@@ -19,7 +19,7 @@ um = 1e-6
 nm = 1e-9
 
 
-class Fresnell:
+class Fresnel:
     def __init__(self, lambda_=633 * nm, pix=3.45 * um, z0=1500 * mm, zr=1500 * mm, flag=0, shift=0):
         self.lambda_ = lambda_
         self.pix = pix
@@ -38,7 +38,7 @@ class Fresnell:
         pad_img[posx:posx + width, posy:posy + height] = raw_img[:, :] / 255
         return pad_img
 
-    def fresnell(self, pad_img, flag=True):
+    def fresnel(self, pad_img, flag=True):
         M, N = pad_img.shape
         Lx0 = np.sqrt(self.lambda_ * self.z0 * M)  # FFT计算时同时满足振幅及相位取样条件的物光场宽度
         Ly0 = np.sqrt(self.lambda_ * self.z0 * N)
@@ -112,7 +112,7 @@ class Fresnell:
 
     def record(self, raw_img):
         pad_img = self.zero_padding(raw_img)
-        object_ = self.fresnell(pad_img)
+        object_ = self.fresnel(pad_img)
         refer_ = self.wave(pad_img)
         w1 = object_ + 0.5 * refer_
         w1 = np.power(np.abs(w1), 2)  # 求出全息平面上的强度分布
@@ -121,7 +121,7 @@ class Fresnell:
     def reconstruct(self, holo_img, RoomNo=10):
         # image processing
         holo_img = holo_img - np.mean(holo_img)
-        U0 = self.fresnell(holo_img, False)
+        U0 = self.fresnel(holo_img, False)
 
         Gmax = np.max(np.abs(U0))
         Gmin = np.min(np.abs(U0))
@@ -149,17 +149,17 @@ if __name__ == "__main__":
     # flag=0: 球面波
     # flag=1: 平面波
     # 其他: 物体相位
-    fresnell = Fresnell(flag=0)
+    fresnel = Fresnel(flag=0)
     # 全息记录
-    holo = fresnell.record(G)
+    holo = fresnel.record(G)
     print(holo.shape, holo)
     plt.figure(2)
     plt.imshow(holo, cmap="gray")
-    holo_show = Image.fromarray(fresnell.format_img(holo)).convert("L")
+    holo_show = Image.fromarray(fresnel.format_img(holo)).convert("L")
     holo_show.save("./result/fre_butterfly_CGH.bmp", "bmp")
     # 全息再现
-    recon_img = fresnell.reconstruct(holo)
-    recon_img = fresnell.format_img(recon_img)
+    recon_img = fresnel.reconstruct(holo)
+    recon_img = fresnel.format_img(recon_img)
     print(recon_img.shape, recon_img)
     plt.figure(3)
     plt.imshow(recon_img, cmap="gray")
